@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Steganography Tool
+
+This is a web-based steganography tool that allows users to hide and reveal secret messages within images. The tool uses the least significant bit (LSB) technique to embed data into image files without noticeably altering their appearance.
+
+## Features
+
+- Encode secret messages into images
+- Decode hidden messages from images
+- Support for manual key input or automatic key generation
+- Drag and drop interface for image upload
+- Download modified images with hidden messages
+- Copy and download generated keys
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/steganography-tool.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+   ```
+   cd steganography-tool
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+   ```
+   npm run dev
+   ```
 
-## Learn More
+5. Open [http://localhost:3333](http://localhost:3333) in your browser to see the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Upload an image using the drag and drop interface or by clicking on the upload area.
+2. Choose whether to use a manual key or generate a random key.
+3. If using a manual key, enter it in the provided input field.
+4. Click the "Hide Key" button to embed the key into the image.
+5. Download the modified image and save the generated key.
+6. To decode a message, upload the modified image and enter the key used during encoding.
+7. Click the "Decode Image" button to reveal the hidden message.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
