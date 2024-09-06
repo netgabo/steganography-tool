@@ -1,6 +1,5 @@
 'use client'
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -331,7 +330,6 @@ export function SteganographyTool() {
 
   return (
     <TooltipProvider>
-       <SpeedInsights/> 
       <div className="flex flex-col space-y-6 p-6 max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold">Steganography Tool</h1>
